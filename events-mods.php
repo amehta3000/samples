@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Modifications to Event Calendar/Community plugins, adding the ability to save and display 
+ * additional fields for the organizers/promoters.
+ */
 class Events_Mods {
 
 	private $single_organizer_label = 'Promoter';
@@ -112,7 +116,7 @@ class Events_Mods {
 	}
 
 	public function enqueue() {
-		if (true) { //( tribe_is_community_edit_event_page() ) {
+		if (tribe_is_community_edit_event_page() ) {
 			wp_enqueue_script( 'xl-events-mods', get_stylesheet_directory_uri() . '/tribe-events/events_mods.js', array(
 				Tribe__Events__Main::POSTTYPE . '-premium-admin',
 				'jquery'
