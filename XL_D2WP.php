@@ -4,12 +4,12 @@
 	 * Custom brute force migration of XLR8R.com current Drupal 5 incarnation into a new Wordpress db.
 	 * Will migrate all Nodes -> Categories, posts, attachments (images & audio), authors and users.
 	 * Special cases for migrating Podcasts and Downloads category post which have multiple audio attachments.
-     *
-     * Both databases, Drupal and target Wordpress db should be on the same server
-     * Update the site url in the config file. 
-     *
-     * This is a gnarly script, meant to run in browser and is a bit time intensive, 
-     * so be patient, it will get you there.
+	 *
+	 * Both databases, Drupal and target Wordpress db should be on the same server
+	 * Update the site url in the config file. 
+	 *
+	 * This is a gnarly script, meant to run in browser and is a bit time intensive, 
+	 * so be patient, it will get you there.
 	*/
          
 	ini_set('max_execution_time', 7200); 		// SET EXCUTION TIME BY DEFAULT IT IS 300 SO YOU NEED TO INCREASE FOR LARGE DB
